@@ -6,7 +6,7 @@ import java.util.*
 //Tipo de vehículo = VehicleType
 //Hora = time
 //Tarjeta de dcto = discountCard
-data class Vehicle(val plate : String, val type: VehicleType, val checkInTime: Calendar, val discountCard: String?) {
+data class Vehicle(val plate : String, val type: VehicleType, val checkInTime: Calendar, val discountCard: String? = null) {
 
         override fun equals(other : Any?) : Boolean {
             if (other is Vehicle) {
