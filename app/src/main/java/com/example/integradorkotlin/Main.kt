@@ -4,17 +4,21 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 fun main() {
-    enterParking()
+   /* enterParking()*/
 
     val parking = Parking()
-    for (i in fullArrayVehicles()){
-        parking.addVehicle(i)
-    }
+    parking.checkIn(fullArrayVehicles())
+
     val bus6 = Vehicle("DD444DD1AAAAH1", VehicleType.BUS, Calendar.getInstance(), "DISCOUNT_CARD_002")
     parking.addVehicle(bus6)
+
+  /*  //LOG INF DE VEHICULOS AGREGADO
+    parking.vehicles.forEach(System.out::println)*/
+
 }
 
 //Creamos una f(x) para poder llenar una lista que luego al iterar para usar el addVehicle
+//Arreglo de vehículos
 fun fullArrayVehicles(): List<Vehicle>{
     val car = Vehicle("AA111AA", VehicleType.CAR, Calendar.getInstance(), "DISCOUNT_CARD_001")
     val motorCycle = Vehicle("B222BBB", VehicleType.MOTORCYCLE, Calendar.getInstance())
@@ -42,7 +46,8 @@ fun fullArrayVehicles(): List<Vehicle>{
         bus2, bus3, bus4, bus5)
 }
 
-fun enterParking(){
+//Para ejercicios 1-5
+/*fun enterParking(){
 
     val car = Vehicle("AA111AA", VehicleType.CAR, Calendar.getInstance(), "DISCOUNT_CARD_001")
     val motorCycle = Vehicle("B222BBB", VehicleType.MOTORCYCLE, Calendar.getInstance())
@@ -61,4 +66,5 @@ fun enterParking(){
 
     parking.vehicles.remove(motorCycle)
 
-}
+}*/
+
