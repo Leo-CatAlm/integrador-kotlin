@@ -2,10 +2,10 @@ package com.example.integradorkotlin
 
 import java.util.*
 
-//Placa = plate
-//Tipo de vehículo = VehicleType
-//Hora = time
-//Tarjeta de dcto = discountCard
+//late = plate
+//vehicle type = VehicleType
+//check in = checkInTime
+//discount card = discountCard
 data class Vehicle(val plate : String, val type: VehicleType, val checkInTime: Calendar, val discountCard: String? = null) {
 
         override fun equals(other : Any?) : Boolean {
